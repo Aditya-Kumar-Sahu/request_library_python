@@ -1,4 +1,10 @@
 # the GET request
 import requests
 
-requests.get("https://api.github.com")
+url = "https://api.github.com"
+requests.get(url)
+
+
+# Response
+response = requests.get(url)
+print(response)
