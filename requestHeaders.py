@@ -17,3 +17,7 @@ response = requests.get(
 json_response = response.json()
 repository = json_response['items'][0]
 print(f'Text matches: {repository["text_matches"]}')
+
+'''
+The Accept header tells the server what content types your application can handle.
+'''
