@@ -1,5 +1,6 @@
 # the GET request
 import http
+from urllib import response
 import requests
 
 # requests.get("https://api.github.com")
@@ -8,7 +9,7 @@ import requests
 
 
 # Response
-# response = requests.get("https://api.github.com")
+response = requests.get("https://api.github.com")
 # print(response)
 #------------------------------------------------
 
@@ -53,15 +54,22 @@ import requests
 
 
 # Content
-response = requests.get("https://api.github.com")
-print(response.content)
-print("\n")
+# response = requests.get("https://api.github.com")
+# print(response.content)
+# print("\n")
 
-print(response.text)
-print("\n")
+# print(response.text)
+# print("\n")
 
-response.encoding = "utf-8"     # Optional: requests infer this internally
-print(response.text)
-print("\n")
+# response.encoding = "utf-8"     # Optional: requests infer this internally
+# print(response.text)
+# print("\n")
 
-print(response.json())
+# print(response.json())
+#--------------------------------------------------
+
+
+
+# Headers
+# print(response.headers)
+print(response.headers['Content-Type'])
